@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Person } from './Person';
 import {of,Observable} from 'rxjs';
 import { HttpClient } from '@angular/common/http';
+import { Movie } from './Person';
 
 @Injectable()
 export class BackendService {
@@ -30,11 +31,11 @@ export class BackendService {
       }
   }
 
-  GetMovies() : Observable<any>
+  GetMovies() : Observable<Movie>
   {
       let u =  "https://api.stackexchange.com/2.2/search?order=desc&sort=activity&intitle=perl&site=stackoverflow";
 
-      return this.httpobj.get<any>(u);
+      return this.httpobj.get<Movie>(u);
   }
 
 }

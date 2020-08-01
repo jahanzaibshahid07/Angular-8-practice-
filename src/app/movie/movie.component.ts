@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { BackendService } from '../backend.service';
+import { MovieResponse } from '../Person';
+
+
 
 @Component({
   selector: 'app-movie',
@@ -10,7 +13,7 @@ export class MovieComponent implements OnInit {
 
 
   
-  movies: Array<any>;
+  movies: Array<MovieResponse>;
 
   constructor(private backend: BackendService) { }
  

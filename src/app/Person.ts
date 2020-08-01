@@ -5,3 +5,17 @@ export class Person
 
   }
 }
+
+export interface Movie
+{
+  items: Array<MovieResponse>;
+  
+}
+
+export interface MovieResponse
+{
+  title : string;
+  link : string;
+  score : number;
+
+}
