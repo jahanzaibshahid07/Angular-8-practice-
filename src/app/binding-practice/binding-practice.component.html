@@ -1,0 +1,35 @@
+
+
+<h1> String interpolation one way </h1>
+itemimageurl : {{itemimageurl}} <br>
+itemimageurl with pipe : {{itemimageurl | uppercase}} <br>
+name : {{name}} <br>
+age : {{age}} <br>
+test: {{test}} <br>
+testobject : {{testobject}} <br>
+testobject with pipe : {{testobject | json}} <br>
+
+
+<h1> Event Binding </h1>
+<button (click)="onSaveClick($event)"> Event binding ... </button>
+<!-- <button (click)="onSaveClick()">Event binding ... </button> -->
+
+
+
+ <h1>Two way data binding</h1>
+ <input [value]="login1" (input)="setValue($event)" /> {{login1}}
+
+
+ <h1>Two way data binding with ngModel</h1>
+ <input [(ngModel)]="login2" /> {{login2}}
+
+
+<h1> Template Reference Variable </h1>
+
+<input #login>
+<button (click)="show(login.value)"> click me</button>
+
+<input #mylogin>
+<button (click)="show(mylogin.value)"> click me</button>
+
+

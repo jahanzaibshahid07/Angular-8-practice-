@@ -1,0 +1,11 @@
+
+
+
+<h1>Data binding and for loop example</h1>
+<p> Person data </p>
+
+<div *ngFor="let p of persons">
+
+  <app-person [per]="p" (CountedEvent)="EventHandler($event)"></app-person>
+  
+</div>

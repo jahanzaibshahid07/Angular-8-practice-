@@ -1,0 +1,13 @@
+
+
+
+<div>
+  id: {{per.id}} <br> 
+  name: {{per.name}} <br>
+  age: {{per.age}}
+
+  <button *ngIf="!iscounted; else content" (click)="onCounted()" > count on me </button>
+
+<ng-template #content> button is counted </ng-template>
+
+</div>

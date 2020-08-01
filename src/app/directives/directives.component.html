@@ -1,0 +1,38 @@
+<!-- 
+<h1> ngSwitch</h1>
+<select [(ngModel)]="countryselected" >  
+
+  <option value="0"> --Selected-- </option>
+  <option value="1">Pakistan</option>
+  <option value="2">India</option>
+  <option value="3">England</option>
+
+</select>
+
+<!-- in [] it show data inside div -->
+<!-- <div [ngSwitch]="countryselected"> 
+
+  <div *ngSwitchCase="1">output2</div>
+  <div *ngSwitchCase="2">output3</div>
+  <div *ngSwitchCase="3">output4</div>
+  <div *ngSwitchDefault>wrong selection</div>
+
+</div>  -->
+
+<!-- in * it shows whole div  -->
+
+
+<!-- <div *ngFor = "let p of person" class="box">
+Id : {{p.id}} <br>
+Name : {{p.name}} <br>
+Age : {{p.age}} <br>
+</div> -->
+
+
+<div *ngFor = "let p of person; let i=index" class="box">
+
+index : {{i}} <br>
+Name : {{p.name}} <br>
+Age : {{p.age}} <br>
+
+</div>
